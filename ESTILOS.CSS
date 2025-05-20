@@ -1,0 +1,161 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(105, 112, 84, 1) 46%, rgba(105, 98, 36, 1) 100%);
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 3px solid #e62429;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 1rem;
+ 
+  
+}
+
+h1 {
+  color: #e62429;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #2a2a2a;
+  border: 2px solid #e62429;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e62429;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  box-shadow: #d12828 ;
+  border: solid;
+  padding: 50px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input, select {
+  background: #333;
+  color: white;
+  border: 1px solid #666;
+}
+input:hover ,select:hover{
+    background-color: rgb(71, 83, 83);
+}
+button {
+  background-color: #e62429;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bf1c21;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  margin-top: 2rem;
+  border-top: 2px solid #e62429;
+}
+
+.logo_container{
+ border-radius: 50%;
+ width: 200px;
+ text-align: center;
+}
+.logo_container .logo{
+    text-align: center;
+    background-color: #bf1c21;
+}
+
+.header_duo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+ 
+}
+
+
+/* Estilos para el header responsivo */
+.encabezado {
+  background-color: #111;
+  padding: 1rem;
+  border-bottom: 3px solid #e62429;
+}
+
+.contenedor-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  max-width: 100%;
+}
+
+.titulo {
+  color: #e62429;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
