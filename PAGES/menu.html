@@ -5,209 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panel de Gestión | Torneos Activos</title>
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #1a1a1a;
-      color: #fff;
-    }
-
-    header {
-      background-color: #111;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 3px solid #e62429;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #e62429;
-    }
-
-    .panel {
-      max-width: 1200px;
-      margin: 2rem auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 0 1rem;
-    }
-
-    .card {
-      background-color: #2a2a2a;
-      border: 2px solid #e62429;
-      border-radius: 10px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .card-body {
-      padding: 1rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .card-body h2 {
-      margin: 0 0 0.5rem;
-      font-size: 1.2rem;
-      color: #e62429;
-    }
-
-    .card-body p {
-      margin: 0.3rem 0;
-    }
-
-    .btn {
-      margin-top: 1rem;
-      background-color: #e62429;
-      color: white;
-      border: none;
-      padding: 0.5rem;
-      text-align: center;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn:hover {
-      background-color: #bf1c21;
-    }
-
-    .modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-contenido {
-  background-color: #2a2a2a;
-  margin: 10% auto;
-  padding: 2rem;
-  border: 2px solid #e62429;
-  width: 90%;
-  max-width: 600px;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.cerrar {
-  color: #e62429;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.modal-contenido h3 {
-  color: #e62429;
-}
-
-.modal-contenido table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-.modal-contenido table th,
-.modal-contenido table td {
-  border: 1px solid #444;
-  padding: 0.5rem;
-  text-align: left;
-}
-
-  </style>
-</head>
+  <link rel="stylesheet" href="../ESTILOS/ESTILOS.CSS">
+ </head>
 <body>
 
 <header>
   <h1>Gestión de Torneos</h1>
-  <img src="logo-legion.png" alt="Logo" style="height: 60px;">
+  <img src="../SOURCE/logo.jpg.jpg" alt="Logo" style="height: 60px;">
 </header>
 
 <main class="panel">
   <div class="card">
-    <img src="torneo (1).png" alt="Torneo Sub10">
+    <img src="../SOURCE/torneo (1).png" alt="Torneo Sub10">
     <div class="card-body">
       <h2>Torneo Sub10</h2>
       <p>Fase: Semifinales</p>
       <p>Fecha: 2 de marzo 2025</p>
       <p>Categoría: 2014-2015</p>
-      <a class="btn" href="#">Ver más información</a>
+      <a class="btn" href="#" onclick="abrirModal()">Ver más información</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="torneo (2).png" alt="Torneo 2012">
+    <img src="../SOURCE/torneo (2).png" alt="Torneo 2012">
     <div class="card-body">
       <h2>Torneo 2012</h2>
       <p>Fase: Octavos de Final</p>
       <p>Fecha: 2 de marzo 2025</p>
       <p>Categoría: 2012-2013</p>
-      <a class="btn" href="#">Ver más información</a>
+      <a class="btn" href="#" onclick="abrirModal()">Ver más información</a>
     </div>
   </div>
-
-
-  <!-- Puedes agregar más torneos aquí -->
- <div class="card">
-    <img src="torneo (2).png" alt="Torneo 2012">
-    <div class="card-body">
-      <h2>Torneo 2012</h2>
-      <p>Fase: Octavos de Final</p>
-      <p>Fecha: 2 de marzo 2025</p>
-      <p>Categoría: 2012-2013</p>
-      <a class="btn" href="#">Ver más información</a>
-    </div>
-  </div>
-
-
-   <div class="card">
-    <img src="torneo (2).png" alt="Torneo 2012">
-    <div class="card-body">
-      <h2>Torneo 2012</h2>
-      <p>Fase: Octavos de Final</p>
-      <p>Fecha: 2 de marzo 2025</p>
-      <p>Categoría: 2012-2013</p>
-      <a class="btn" href="#">Ver más información</a>
-    </div>
-  </div>
-
-
-   <div class="card">
-    <img src="torneo (2).png" alt="Torneo 2012">
-    <div class="card-body">
-      <h2>Torneo 2012</h2>
-      <p>Fase: Octavos de Final</p>
-      <p>Fecha: 2 de marzo 2025</p>
-      <p>Categoría: 2012-2013</p>
-      <a class="btn" href="#">Ver más información</a>
-    </div>
-  </div>
-
-  
-
 
 </main>
 
 
 
 <!-- Botón ejemplo para abrir el modal -->
-<a class="btn" href="#" onclick="abrirModal()">Ver más información</a>
+
 
 <!-- Modal -->
 <div id="modalTorneo" class="modal">

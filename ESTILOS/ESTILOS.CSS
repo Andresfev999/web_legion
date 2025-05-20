@@ -1,18 +1,3 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(105, 112, 84, 1) 46%, rgba(105, 98, 36, 1) 100%);
-  color: #fff;
-  margin: 0;
-}
-
-header {
-  background-color: #111;
-  text-align: center;
-  padding: 2rem;
-  border-bottom: 3px solid #e62429;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .logo {
   width: 300px;
@@ -158,4 +143,130 @@ footer {
     font-size: 1.5rem;
     margin-top: 0.5rem;
   }
+}
+
+
+
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #e62429;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #e62429;
+    }
+
+    .panel {
+      max-width: 1200px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: #2a2a2a;
+      border: 2px solid #e62429;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-body h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #e62429;
+    }
+
+    .card-body p {
+      margin: 0.3rem 0;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      background-color: #e62429;
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #bf1c21;
+    }
+
+    .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-contenido {
+  background-color: #2a2a2a;
+  margin: 10% auto;
+  padding: 2rem;
+  border: 2px solid #e62429;
+  width: 90%;
+  max-width: 600px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.cerrar {
+  color: #e62429;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-contenido h3 {
+  color: #e62429;
+}
+
+.modal-contenido table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.modal-contenido table th,
+.modal-contenido table td {
+  border: 1px solid #444;
+  padding: 0.5rem;
+  text-align: left;
 }
